@@ -22,7 +22,7 @@ Simply change `--framework <blip2|instructblip|llava>` to switch between models.
 ### 🔵 Zero-shot evaluation (example: BLIP-2)
 <pre>
   bash
-./run.sh \
+  run.sh \
   --framework blip2 \
   --mode zero_shot \
   --gpus 0 \
@@ -36,7 +36,9 @@ Simply change `--framework <blip2|instructblip|llava>` to switch between models.
 
 
 ### 🔵 Fine-tuning (example: BLIP-2)
-./run.sh \
+<pre>
+  bash
+  run.sh \
   --framework blip2 \
   --mode finetune \
   --gpus 0,1 \
@@ -51,6 +53,7 @@ Simply change `--framework <blip2|instructblip|llava>` to switch between models.
   --batch 16 \
   --lr 1e-4 \
   --seed 42
+</pre>
 
 
 
