@@ -9,3 +9,6 @@ These spatial relationships are crucial for urban planning [1], walkability asse
 Therefore, we 1) constructed a synthetic dataset tailored to urban scenes and relevant question-answer pairs and 2) ran zero-shot evaluation and fine-tuning on representative open-source VLMs to test whether domain-specific instruction tuning using a synthetic dataset can help close the domain gap.
 
 ![Domain Gap](intro_figure.png)
+
+## Dependency
+<pre> '''pip install requirements.txt''' </pre>
