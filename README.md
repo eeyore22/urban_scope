@@ -11,4 +11,41 @@ Therefore, we 1) constructed a synthetic dataset tailored to urban scenes and re
 ![Domain Gap](intro_figure.png)
 
 ## Dependency
-<pre> '''pip install requirements.txt''' </pre>
+<pre> pip install -r requirements.txt </pre>
+
+## 🚀 Usage
+
+The launcher script `run.sh` provides a unified interface for all open-source models.  
+Simply change `--framework <blip2|instructblip|llava>` to switch between models.
+
+---
+
+### 🔵 Fine-tuning (example: BLIP-2)
+
+```bash
+./run.sh \
+  --framework blip2 \
+  --mode finetune \
+  --gpus 0,1 \
+  --ngpus 2 \
+  --train_json path/to/train.json \
+  --val_json   path/to/val.json \
+  --test_json  path/to/test.json \
+  --image_dir  path/to/images \
+  --out_dir    outputs/blip2/finetune \
+  [--cot] [--lora] [--fp16|--bf16] [--ckpt] \
+  --epochs 20 \
+  --batch 16 \
+  --lr 1e-4 \
+  --seed 42
+
+./run.sh \
+  --framework blip2 \
+  --mode zero_shot \
+  --gpus 0 \
+  --ngpus 1 \
+  --test_json path/to/test.json \
+  --image_dir path/to/images \
+  --out_dir   outputs/blip2/zero_shot \
+  [--cot] [--fp16|--bf16] \
+  --seed 42
