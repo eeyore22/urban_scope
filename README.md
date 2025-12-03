@@ -5,7 +5,7 @@ This study was published at ICCV 2025 Workshop (Multimodal Reasoning and Slow Th
 
 ## Preliminary
 While VLMs are generally strong at recognizing what objects are present in an image, they often struggle to interpret where those objects are located and how they are spatially arranged. Urban scenes contain repetitive elements such as sky, buildings, and greenery, but meaningful understanding depends on fine-grained spatial cues—relative proportions, occlusion (e.g., how much buildings block the sky), depth structure, and left–right layout. These spatial relationships are crucial for urban planning, walkability assessment, and urban heat-island analysis, yet existing models rarely reason over such cues in a systematic way. 
-Despite their importance, there has been no systematic benchmark for evaluating urban scene spatial reasoning in VLMs. Therefore, we 1) constructed a synthetic dataset tailored to urban scenes and relevant question-answer pairs and 2) evaluated representative open-source VLMs in both zero-shot and fine-tuned settings to test whether domain-specific instruction tuning can help close this domain gap.
+Despite their importance, there is a lack of systematic benchmark for evaluating urban scene spatial reasoning in VLMs. Therefore, we 1) constructed a synthetic dataset tailored to urban scenes and relevant question-answer pairs and 2) evaluated representative open-source VLMs in both zero-shot and fine-tuned settings to test whether domain-specific instruction tuning can help close this domain gap.
 
 <p align="center">
   <img src="intro_figure.png" alt="Domain Gap" width="70%">
