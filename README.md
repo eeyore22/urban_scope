@@ -1,6 +1,7 @@
 # Pytorch implementation for evaluating VLM on a synthetic dataset
 This repository covers pytorch implementation for evaluating and fine-tuning BLIP2, InstructBLIP and LLaVA-1.5 on a synthetic instruction dataset. 
 This study was published at ICCV 2025 Workshop (Multimodal Reasoning and Slow Thinking in Large Model Era: Towards System 2 and Beyond).
+[LINK](https://openaccess.thecvf.com/content/ICCV2025W/MARS2/papers/Ro_How_Well_Do_Vision-Language_Models_Understand_Cities__A_Comparative_ICCVW_2025_paper.pdf)
 
 ## Preliminary
 While VLMs are generally strong at recognizing what objects are present in an image, they often struggle to interpret where those objects are located and how they are spatially arranged. Urban scenes contain repetitive elements such as sky, buildings, and greenery, but meaningful understanding depends on fine-grained spatial cues—relative proportions, occlusion (e.g., how much buildings block the sky), depth structure, and left–right layout. These spatial relationships are crucial for urban planning, walkability assessment, and urban heat-island analysis, yet existing models rarely reason over such cues in a systematic way. 
