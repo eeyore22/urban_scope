@@ -20,6 +20,8 @@ Simply change `--framework <blip2|instructblip|llava>` to switch between models.
 
 ---
 ### 🔵 Zero-shot evaluation (example: BLIP-2)
+<pre>
+  bash
 ./run.sh \
   --framework blip2 \
   --mode zero_shot \
@@ -30,6 +32,8 @@ Simply change `--framework <blip2|instructblip|llava>` to switch between models.
   --out_dir   outputs/blip2/zero_shot \
   [--cot] [--fp16|--bf16] \
   --seed 42
+</pre>
+
 
 ### 🔵 Fine-tuning (example: BLIP-2)
 ./run.sh \
