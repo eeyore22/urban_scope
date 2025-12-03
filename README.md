@@ -19,10 +19,19 @@ The launcher script `run.sh` provides a unified interface for all open-source mo
 Simply change `--framework <blip2|instructblip|llava>` to switch between models.
 
 ---
+### 🔵 Zero-shot evaluation (example: BLIP-2)
+./run.sh \
+  --framework blip2 \
+  --mode zero_shot \
+  --gpus 0 \
+  --ngpus 1 \
+  --test_json path/to/test.json \
+  --image_dir path/to/images \
+  --out_dir   outputs/blip2/zero_shot \
+  [--cot] [--fp16|--bf16] \
+  --seed 42
 
 ### 🔵 Fine-tuning (example: BLIP-2)
-
-```bash
 ./run.sh \
   --framework blip2 \
   --mode finetune \
@@ -39,13 +48,5 @@ Simply change `--framework <blip2|instructblip|llava>` to switch between models.
   --lr 1e-4 \
   --seed 42
 
-./run.sh \
-  --framework blip2 \
-  --mode zero_shot \
-  --gpus 0 \
-  --ngpus 1 \
-  --test_json path/to/test.json \
-  --image_dir path/to/images \
-  --out_dir   outputs/blip2/zero_shot \
-  [--cot] [--fp16|--bf16] \
-  --seed 42
+
+
