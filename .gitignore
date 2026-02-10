@@ -1,0 +1,67 @@
+# === Python cache and build artifacts ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+
+# === Jupyter/IPython files ===
+.ipynb_checkpoints/
+
+# === Environment & OS metadata ===
+.env
+.env.*
+*.DS_Store
+*.swp
+
+# === Checkpoints, weights, logs ===
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+runs/
+outputs/
+*.log
+
+# === Dataset artifacts ===
+*.npy
+*.npz
+*.pkl
+*.zip
+*.tar.gz
+data/raw/
+data/augmented/
+data/temp/
+dataset/
+
+# === VS Code / PyCharm ===
+.vscode/
+.idea/
+
+# === Tokenizers / Transformers cache ===
+~/.cache/
+~/.huggingface/
+*.jsonl
+
+# === Generated results or predictions ===
+test_predictions.jsonl
+patch_scores/
+
+# === Misc ===
+*.bak
+
+
+# ignore all local datasets
+data/
+
+
+# local backups
+README.local.md
+requirements.local.txt
+
+
+# local backup files
+README.local.md
+requirements.local.txt
+
